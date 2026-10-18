@@ -1,0 +1,7 @@
+site_name: Practical Living Today
+site_url: https://practicallivingtoday.readthedocs.io/
+theme:
+  name: mkdocs
+
+# This tells MkDocs to treat your raw HTML files as pages without Markdown processing
+use_directory_urls: true
