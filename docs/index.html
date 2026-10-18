@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical Living Today | Home Restoration & Flood Emergency Journal</title>
+    <meta name="description" content="A modern digital portal offering comprehensive guidance on indoor flood extraction, structural drying, mold prevention, and emergency home utility safety.">
+    
+    <!-- Custom SVG Favicon (Electric Teal & Hot Coral Water Drop Shield) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230A192F'/><path d='M50 12 C50 12 22 42 22 62 C22 77 34 88 50 88 C66 88 78 77 78 62 C78 42 50 12 50 12 Z' fill='%2300B4D8'/><path d='M50 28 C50 28 32 48 32 62 C32 72 40 78 50 78 C60 78 68 72 68 62 C68 48 50 28 50 28 Z' fill='%23FF5A5F'/><circle cx='50' cy='62' r='6' fill='%23FFFFFF'/></svg>" type="image/svg+xml">
+
+    <!-- Google Fonts: Cabinet Grotesk (Display), Outfit, & Playfair Display (Editorial) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ==========================================================================
+           UNIQUE VISUAL SYSTEM: "Electric Marine Tech Brutalism"
+           Palette: Deep Abyss Slate (#0A192F), Bio Teal (#00B4D8), Bright Electric Cyan (#90E0EF), 
+                   Emergency Coral (#FF5A5F), Crisp Alabaster (#F8FAFC)
+           Visual Style: Floating Isometric Card Stack, Glassmorphic Overlay Pill Pillows,
+                          Asymmetric Slanted Section Borders & Radial Mesh Blurs
+           ========================================================================== */
+        :root {
+            --bg-base: #F8FAFC;
+            --bg-surface: #FFFFFF;
+            --bg-dark: #0A192F;             /* Deep Abyss Slate */
+            --bg-dark-surface: #112240;
+            --text-main: #0A192F;
+            --text-muted: #4A5568;
+            --text-light: #F8FAFC;
+            --accent-teal: #00B4D8;         /* Bio Teal Primary */
+            --accent-cyan: #90E0EF;         /* Bright Electric Cyan */
+            --accent-coral: #FF5A5F;        /* Emergency Coral Highlight */
+            --accent-coral-hover: #E0484C;
+            --border-soft: rgba(10, 25, 47, 0.08);
+            --border-teal: rgba(0, 180, 216, 0.3);
+            --shadow-flat: 8px 8px 0px #0A192F;
+            --shadow-coral: 8px 8px 0px #FF5A5F;
+            --shadow-glow: 0 20px 40px -15px rgba(0, 180, 216, 0.25);
+            --radius-sharp: 4px;
+            --radius-pill: 999px;
+            --radius-card: 20px;
+            --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Base Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            line-height: 1.75;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 15% 15%, rgba(0, 180, 216, 0.05) 0%, transparent 45%),
+                radial-gradient(circle at 85% 85%, rgba(255, 90, 95, 0.05) 0%, transparent 45%);
+            background-attachment: fixed;
+        }
+
+        h1, h2, h3, .font-heading {
+            font-family: 'Space Grotesk', sans-serif;
+            letter-spacing: -0.03em;
+            line-height: 1.15;
+        }
+
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        a {
+            color: var(--accent-teal);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--accent-coral);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Container Layout */
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-padding {
+            padding: 7rem 0;
+        }
+
+        /* Asymmetric Layout Engines */
+        .asym-hero-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .asym-split-2 {
+            display: grid;
+            grid-template-columns: 0.85fr 1.15fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        /* Section Headings */
+        .section-header {
+            margin-bottom: 3.5rem;
+            text-align: center;
+        }
+
+        .section-header.text-left {
+            text-align: left;
+        }
+
+        .badge-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.45rem 1.2rem;
+            background: rgba(0, 180, 216, 0.1);
+            color: var(--bg-dark);
+            border: 2px solid var(--accent-teal);
+            border-radius: var(--radius-pill);
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 1.2rem;
+            box-shadow: 3px 3px 0px var(--accent-teal);
+        }
+
+        .section-title {
+            font-size: 2.85rem;
+            color: var(--bg-dark);
+            line-height: 1.15;
+        }
+
+        .section-title span {
+            color: var(--accent-coral);
+            font-style: italic;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+
+        /* Tactile Neo-Brutalist Cards */
+        .portal-card {
+            background: var(--bg-surface);
+            border: 2.5px solid var(--bg-dark);
+            border-radius: var(--radius-card);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-flat);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .portal-card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0px var(--accent-teal);
+            border-color: var(--bg-dark);
+        }
+
+        /* Action Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: 1.05rem 2.3rem;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.88rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            border-radius: var(--radius-pill);
+            cursor: pointer;
+            transition: var(--transition);
+            border: 2.5px solid var(--bg-dark);
+        }
+
+        .btn-coral {
+            background: var(--accent-coral);
+            color: #FFFFFF;
+            box-shadow: 4px 4px 0px var(--bg-dark);
+        }
+
+        .btn-coral:hover {
+            background: var(--accent-coral-hover);
+            color: #FFFFFF;
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px var(--bg-dark);
+        }
+
+        .btn-dark {
+            background: var(--bg-dark);
+            color: var(--text-light);
+            box-shadow: 4px 4px 0px var(--accent-teal);
+        }
+
+        .btn-dark:hover {
+            background: var(--bg-dark-surface);
+            color: var(--accent-cyan);
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px var(--accent-coral);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--bg-dark);
+            box-shadow: 4px 4px 0px var(--bg-dark);
+        }
+
+        .btn-outline:hover {
+            background: var(--bg-dark);
+            color: var(--text-light);
+        }
+
+        /* Slanted Visual Divider */
+        .asym-divider {
+            width: 100%;
+            height: 32px;
+            background: var(--bg-dark);
+            clip-path: polygon(0 0, 100% 80%, 100% 100%, 0 100%);
+            margin: -1px 0;
+        }
+
+        /* ==========================================================================
+           SECTION 1: Sticky Navigation Bar
+           ========================================================================== */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(248, 250, 252, 0.92);
+            backdrop-filter: blur(16px);
+            border-bottom: 2.5px solid var(--bg-dark);
+            padding: 1.1rem 0;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+            text-decoration: none;
+        }
+
+        .logo-emblem {
+            width: 44px;
+            height: 44px;
+            background: var(--bg-dark);
+            border: 2px solid var(--accent-coral);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-cyan);
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 800;
+            font-size: 1.4rem;
+            box-shadow: 3px 3px 0px var(--accent-teal);
+        }
+
+        .brand-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--bg-dark);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        .brand-title span {
+            display: block;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.88rem;
+            color: var(--accent-coral);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--text-main);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-coral);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            color: var(--bg-dark);
+            cursor: pointer;
+        }
+
+        /* ==========================================================================
+           SECTION 2: Dynamic Hero Section
+           ========================================================================== */
+        .hero-section {
+            padding: 5rem 0 6.5rem 0;
+            position: relative;
+        }
+
+        .hero-headline {
+            font-size: 3.4rem;
+            line-height: 1.1;
+            color: var(--bg-dark);
+            margin-bottom: 1.4rem;
+        }
+
+        .hero-subhead {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            max-width: 92%;
+            line-height: 1.75;
+        }
+
+        .hero-frame {
+            position: relative;
+        }
+
+        .hero-img-main {
+            border-radius: var(--radius-card);
+            box-shadow: 12px 12px 0px var(--bg-dark);
+            width: 100%;
+            height: 490px;
+            object-fit: cover;
+            border: 2.5px solid var(--bg-dark);
+        }
+
+        .hero-alert-badge {
+            position: absolute;
+            bottom: -25px;
+            left: -25px;
+            background: var(--bg-dark);
+            color: var(--text-light);
+            padding: 1.25rem 1.75rem;
+            border-radius: var(--radius-card);
+            box-shadow: 6px 6px 0px var(--accent-teal);
+            border: 2px solid var(--accent-coral);
+            max-width: 290px;
+        }
+
+        .hero-alert-badge h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.95rem;
+            color: var(--accent-cyan);
+        }
+
+        .hero-alert-badge p {
+            font-size: 0.82rem;
+            color: rgba(248, 250, 252, 0.75);
+            margin-top: 0.2rem;
+        }
+
+        /* ==========================================================================
+           SECTION 3: Quick Stats & Achievements Grid
+           ========================================================================== */
+        .stats-banner {
+            background: var(--bg-dark);
+            color: var(--text-light);
+            padding: 4.5rem 0;
+            border-radius: var(--radius-card);
+            margin-bottom: 2rem;
+            border: 2.5px solid var(--accent-teal);
+            box-shadow: var(--shadow-coral);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-card {
+            padding: 1rem;
+            border-right: 1px solid rgba(248, 250, 252, 0.12);
+        }
+
+        .stat-card:last-child {
+            border-right: none;
+        }
+
+        .stat-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3.2rem;
+            font-weight: 800;
+            color: var(--accent-cyan);
+            margin-bottom: 0.2rem;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.85rem;
+            color: rgba(248, 250, 252, 0.75);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        /* ==========================================================================
+           SECTION 4: Platform Overview / Editorial Mission Section
+           ========================================================================== */
+        .mission-panel {
+            background: var(--bg-surface);
+            border-radius: var(--radius-card);
+            padding: 4rem;
+            border: 2.5px solid var(--bg-dark);
+            box-shadow: var(--shadow-flat);
+        }
+
+        /* ==========================================================================
+           SECTION 5: Main Featured Article Section (SEO / Anchor Placement)
+           ========================================================================== */
+        .article-container {
+            background: var(--bg-surface);
+            border-radius: var(--radius-card);
+            padding: 4.5rem;
+            box-shadow: var(--shadow-flat);
+            border: 2.5px solid var(--bg-dark);
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            border-bottom: 2px solid var(--border-soft);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2.2rem;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .article-body h2 {
+            font-size: 1.9rem;
+            color: var(--bg-dark);
+            margin: 2.5rem 0 1.2rem 0;
+        }
+
+        .article-body h3 {
+            font-size: 1.4rem;
+            color: var(--accent-teal);
+            margin: 2rem 0 1rem 0;
+        }
+
+        .article-body p {
+            margin-bottom: 1.6rem;
+            font-size: 1.1rem;
+            color: #1E293B;
+            line-height: 1.85;
+        }
+
+        .article-body ul {
+            margin: 1.2rem 0 1.8rem 2rem;
+            font-size: 1.08rem;
+            color: #1E293B;
+        }
+
+        .article-body li {
+            margin-bottom: 0.75rem;
+        }
+
+        .backlink-anchor {
+            color: var(--bg-dark);
+            font-weight: 700;
+            background: rgba(0, 180, 216, 0.22);
+            padding: 0.25rem 0.55rem;
+            border-bottom: 2.5px solid var(--accent-coral);
+            transition: var(--transition);
+        }
+
+        .backlink-anchor:hover {
+            color: #FFFFFF;
+            background: var(--accent-coral);
+            border-color: var(--bg-dark);
+        }
+
+        .article-quote {
+            background: rgba(0, 180, 216, 0.06);
+            border-left: 4px solid var(--accent-coral);
+            padding: 1.8rem 2.2rem;
+            margin: 2.2rem 0;
+            border-radius: 0;
+            font-style: italic;
+            font-size: 1.15rem;
+            color: var(--bg-dark);
+        }
+
+        /* ==========================================================================
+           SECTION 6: Core Features & Key Value Grid
+           ========================================================================== */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .feature-icon-box {
+            width: 58px;
+            height: 58px;
+            background: rgba(0, 180, 216, 0.15);
+            border: 2px solid var(--bg-dark);
+            border-radius: var(--radius-sharp);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-coral);
+            font-size: 1.6rem;
+            margin-bottom: 1.4rem;
+            box-shadow: 3px 3px 0px var(--bg-dark);
+        }
+
+        /* ==========================================================================
+           SECTION 7: Visual Breakdown / Step-by-Step Architecture Guide
+           ========================================================================== */
+        .step-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .step-card {
+            display: flex;
+            gap: 1.75rem;
+            background: var(--bg-surface);
+            padding: 2rem;
+            border-radius: var(--radius-card);
+            border: 2.5px solid var(--bg-dark);
+            box-shadow: 4px 4px 0px var(--bg-dark);
+        }
+
+        .step-index {
+            width: 48px;
+            height: 48px;
+            background: var(--bg-dark);
+            color: var(--accent-cyan);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+            border: 2px solid var(--accent-coral);
+        }
+
+        /* ==========================================================================
+           SECTION 8: Comprehensive Comparison Table / Value Matrix
+           ========================================================================== */
+        .table-responsive {
+            overflow-x: auto;
+            border-radius: var(--radius-card);
+            border: 2.5px solid var(--bg-dark);
+            box-shadow: var(--shadow-flat);
+        }
+
+        .matrix-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-surface);
+            text-align: left;
+        }
+
+        .matrix-table th {
+            background: var(--bg-dark);
+            color: var(--text-light);
+            padding: 1.3rem 1.6rem;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.88rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .matrix-table td {
+            padding: 1.2rem 1.6rem;
+            border-bottom: 1px solid var(--border-soft);
+            font-size: 0.98rem;
+        }
+
+        .matrix-table tr:hover {
+            background: rgba(0, 180, 216, 0.04);
+        }
+
+        /* ==========================================================================
+           SECTION 9: Interactive FAQ Section (Accordion)
+           ========================================================================== */
+        .faq-accordion {
+            max-width: 920px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.1rem;
+        }
+
+        .faq-item {
+            background: var(--bg-surface);
+            border: 2.5px solid var(--bg-dark);
+            border-radius: var(--radius-card);
+            overflow: hidden;
+            transition: var(--transition);
+            box-shadow: 4px 4px 0px var(--bg-dark);
+        }
+
+        .faq-question {
+            padding: 1.4rem 2rem;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--bg-dark);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: none;
+            border: none;
+            width: 100%;
+            text-align: left;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease-out;
+            padding: 0 2rem;
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 280px;
+            padding: 0 2rem 1.6rem 2rem;
+        }
+
+        .faq-icon {
+            font-size: 1.3rem;
+            color: var(--accent-coral);
+            transition: var(--transition);
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        /* ==========================================================================
+           SECTION 10: Expert Tips & Best Practices Cards
+           ========================================================================== */
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .tip-card {
+            border-top: 6px solid var(--accent-coral);
+        }
+
+        /* ==========================================================================
+           SECTION 11: User Feedback & Testimonials Showcase
+           ========================================================================== */
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+        }
+
+        .author-box {
+            display: flex;
+            align-items: center;
+            gap: 1.1rem;
+            margin-top: 1.6rem;
+        }
+
+        .author-avatar {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2.5px solid var(--bg-dark);
+        }
+
+        /* ==========================================================================
+           SECTION 12: Highlighted Resource Banner / Quick Action Callout
+           ========================================================================== */
+        .resource-banner {
+            background: linear-gradient(135deg, var(--bg-dark) 0%, #112240 100%);
+            border-radius: var(--radius-card);
+            padding: 4.5rem 3.5rem;
+            color: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+            border: 2.5px solid var(--accent-teal);
+            box-shadow: 8px 8px 0px var(--accent-coral);
+        }
+
+        /* ==========================================================================
+           SECTION 13: Functional Contact Form Section
+           ========================================================================== */
+        .contact-card {
+            background: var(--bg-surface);
+            border-radius: var(--radius-card);
+            padding: 4rem;
+            border: 2.5px solid var(--bg-dark);
+            box-shadow: var(--shadow-flat);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.55rem;
+        }
+
+        .form-group.full {
+            grid-column: span 2;
+        }
+
+        .form-group label {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--bg-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .form-control {
+            padding: 0.95rem 1.25rem;
+            border: 2.5px solid var(--bg-dark);
+            border-radius: var(--radius-sharp);
+            background: var(--bg-base);
+            font-family: inherit;
+            font-size: 0.98rem;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-teal);
+            background: #FFFFFF;
+        }
+
+        /* ==========================================================================
+           SECTION 14: Comprehensive Footer
+           ========================================================================== */
+        .site-footer {
+            background: var(--bg-dark);
+            color: rgba(248, 250, 252, 0.75);
+            padding: 5.5rem 0 2.5rem 0;
+            font-size: 0.92rem;
+            border-top: 4px solid var(--accent-coral);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 3.5rem;
+            margin-bottom: 4.5rem;
+        }
+
+        .footer-title {
+            color: var(--accent-cyan);
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.95rem;
+            margin-bottom: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .footer-links a {
+            color: rgba(248, 250, 252, 0.75);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-cyan);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(248, 250, 252, 0.1);
+            padding-top: 2.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.88rem;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1024px) {
+            .asym-hero-grid, .asym-split-2 {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .features-grid, .tips-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .hero-headline {
+                font-size: 2.6rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .features-grid, .tips-grid, .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-card {
+                border-right: none;
+                border-bottom: 1px solid rgba(248, 250, 252, 0.12);
+            }
+
+            .article-container, .contact-card {
+                padding: 2.2rem 1.6rem;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-group.full {
+                grid-column: span 1;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1.2rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==========================================================================
+       SECTION 1: Sticky Navigation Bar
+       ========================================================================== -->
+    <nav class="navbar">
+        <div class="container nav-wrapper">
+            <a href="#" class="brand-logo">
+                <div class="logo-emblem">P</div>
+                <div class="brand-title">Practical Living <span>Today</span></div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#mission">Overview</a></li>
+                <li><a href="#featured-article">Flood Safety</a></li>
+                <li><a href="#guide">Action Blueprint</a></li>
+                <li><a href="#matrix">Drying Matrix</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Consult Desk</a></li>
+            </ul>
+            <a href="#featured-article" class="btn btn-coral" style="padding: 0.65rem 1.4rem; font-size: 0.8rem;">Read Article</a>
+            <button class="mobile-toggle" aria-label="Toggle Navigation Menu">☰</button>
+        </div>
+    </nav>
+
+    <!-- ==========================================================================
+       SECTION 2: Dynamic Hero Section
+       ========================================================================== -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="asym-hero-grid">
+                <div>
+                    <div class="badge-tag">
+                        <span>🌊</span> Flood Emergency & Indoor Restoration Protocols
+                    </div>
+                    <h1 class="hero-headline">Rapid Indoor Water Extraction and Structural Restoration Guidelines</h1>
+                    <p class="hero-subhead">A specialized digital publication delivering authoritative, step-by-step technical guidance on extracting standing water, preventing mold colonization, and restoring residential interiors safely.</p>
+                    <div style="display: flex; gap: 1.2rem; flex-wrap: wrap;">
+                        <a href="#featured-article" class="btn btn-coral">Explore Flood Guide →</a>
+                        <a href="#guide" class="btn btn-outline">Check Response Checklist</a>
+                    </div>
+                </div>
+                <div class="hero-frame">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1000&q=80" alt="Home Interior Water Damage and Restoration Equipment" class="hero-img-main">
+                    <div class="hero-alert-badge">
+                        <h4>24–48 Hour Mold Window</h4>
+                        <p>Extracting standing water within the first 24 hours prevents toxic black mold spore germination.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION 3: Quick Stats & Achievements Grid
+       ========================================================================== -->
+    <div class="container">
+        <section class="stats-banner">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">24 Hrs</div>
+                    <div class="stat-label">Critical Window for Structural Extraction</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50 Gallons</div>
+                    <div class="stat-label">Extraction Capacity Per Minute (Commercial)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Independent Restoration Editorial Focus</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Disaster Response Standard</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==========================================================================
+       SECTION 4: Platform Overview / Editorial Mission Section
+       ========================================================================== -->
+    <section class="section-padding" id="mission">
+        <div class="container">
+            <div class="mission-panel">
+                <div class="badge-tag">Editorial Mission</div>
+                <h2 class="section-title" style="margin-bottom: 1.5rem;">Safeguarding Homes from Subterranean & Storm Water Hazards</h2>
+                <p style="font-size: 1.15rem; color: var(--text-muted); max-width: 920px; margin-bottom: 1.5rem;">
+                    Practical Living Today operates as an independent technical portal for homeowners, estate managers, and property stewards. We publish research-backed, practical protocols on resolving indoor flooding, main water line bursts, electrical safety during damp emergencies, and structural mold mitigation.
+                </p>
+                <p style="font-size: 1.02rem; color: var(--text-muted); max-width: 920px;">
+                    Our publication collaborates with certified disaster recovery specialists, environmental hygienists, and master plumbers to establish clear, stress-reducing emergency workflows that protect family health and preserve long-term property equity.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION 5: Main Featured Article Section (SEO / Anchor Placement)
+       ========================================================================== -->
+    <section class="section-padding" id="featured-article" style="background: rgba(0, 180, 216, 0.03);">
+        <div class="container">
+            <article class="article-container">
+                <div class="section-header text-left" style="margin-bottom: 1.5rem;">
+                    <div class="badge-tag">Volume 32 • Emergency Disaster Protocol</div>
+                    <h1 class="section-title" style="font-size: 2.6rem;">Comprehensive Guide to Handling Indoor Flood Cleanup Safely</h1>
+                </div>
+
+                <div class="article-meta">
+                    <span>Written by <strong>Julian Vance</strong>, Disaster Recovery Analyst</span>
+                    <span>•</span>
+                    <span>Published in Environmental Restoration</span>
+                    <span>•</span>
+                    <span>9 Min Read</span>
+                </div>
+
+                <div class="article-body">
+                    <p class="article-quote">
+                        "Residential flooding from burst pipes or heavy storms creates immediate structural and sanitation hazards inside living spaces. Standing water quickly saturates drywall, carpet padding, and electrical fixtures, making swift extraction necessary to stop mold growth."
+                    </p>
+
+                    <p>
+                        When indoor water intrusion strikes—whether from an uninsulated supply line rupture during a freeze, a municipal water main surge, or torrential seasonal storm runoff—the immediate impact on a home is staggering. Uncontrolled water spreads rapidly through floorboards, seeking lowest elevation channels and seeping down into subfloors, wall studs, and finished ceilings below. Within minutes, porous building materials absorb hundreds of gallons of water, leading to immediate timber swelling, paint blistering, and sheetrock disintegration.
+                    </p>
+
+                    <p>
+                        Beyond visible cosmetic damage, standing indoor floodwater presents acute biological and electrical hazards. Water migrating into lower wall outlets or baseboard wiring can short-circuit electrical systems or create dangerous stray voltage. Simultaneously, organic matter trapped beneath damp carpets or behind baseboards provides nutrient-rich breeding grounds for bacterial proliferation and microbial infestation.
+                    </p>
+
+                    <h2>Thermodynamics of Structural Drying and Dehumidification</h2>
+                    <p>
+                        Successfully drying a flooded residential interior requires far more than soaking up surface puddles with household towels. Water trapped within porous concrete slabs, wall cavities, and hardwood framing evaporates slowly, elevating indoor relative humidity to 90% or higher.
+                    </p>
+                    <p>
+                        According to disaster recovery standards published by the <a href="https://www.fema.gov/" target="_blank" rel="noopener">Federal Emergency Management Agency (FEMA)</a>, rapid mechanical extraction paired with high-velocity air movers and commercial refrigerant dehumidifiers within the first 24 to 48 hours is vital to prevent irreversible structural timber decay.
+                    </p>
+
+                    <h3>Immediate Safety and Remediation Protocol</h3>
+                    <p>
+                        Turning off utilities and utilizing professional-grade pumps and dehumidifiers accelerates drying while preserving home materials. Homeowners should execute this prioritized four-phase emergency checklist:
+                    </p>
+                    <ul>
+                        <li><strong>Utility Isolation:</strong> Immediately disconnect main electrical circuit breakers serving flooded zones from a dry location, and shut off the main water supply valve to halt active inflow.</li>
+                        <li><strong>Standing Water Extraction:</strong> Deploy submersible utility pumps, heavy-duty commercial wet/dry vacuums, and squeegees to remove bulk standing liquid from carpets and hard floors.</li>
+                        <li><strong>Saturated Material Stripping:</strong> Carefully remove non-salvageable porous items, including saturated carpet padding, wet fiberglass insulation, and waterlogged drywall up to 12 inches above the high-water line.</li>
+                        <li><strong>Controlled High-Velocity Drying:</strong> Position industrial axial air movers and LGR dehumidifiers to create continuous cross-ventilation, driving moisture out of structural wall studs.</li>
+                    </ul>
+
+                    <h2>Professional Emergency Dispatch and Professional Remediation</h2>
+                    <p>
+                        While homeowners can execute immediate utility shutoff and surface water removal, completely restoring contaminated living areas and repairing broken underground supply lines requires specialized equipment and licensed plumbing expertise.
+                    </p>
+
+                    <div style="margin: 2.5rem 0; border-radius: var(--radius-sharp); overflow: hidden; border: 2.5px solid var(--bg-dark);">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80" alt="Emergency Plumbing Specialist Inspecting Water Line Rupture">
+                        <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.6rem; padding: 0.4rem; background: var(--bg-surface);">Certified emergency plumbers deploy thermal imaging and heavy-duty extraction tools to isolate leaks and clear standing water.</p>
+                    </div>
+
+                    <p>
+                        Homeowners should <a href="https://premierplumberyork.com/" class="backlink-anchor">Read More</a> to identify qualified emergency restoration teams ready to clear standing water and restore affected spaces. Professional dispatch crews utilize moisture meters, hydro-jetters, and thermal cameras to identify hidden leaks and ensure complete structural drying.
+                    </p>
+
+                    <h2>Environmental Quality Standards and Mold Defense</h2>
+                    <p>
+                        Ensuring long-term indoor environmental safety requires rigorous adherence to mold remediation guidelines. Moisture levels inside timber framing must be reduced below 16% before reinstalling fresh drywall or flooring.
+                    </p>
+                    <p>
+                        Health advisories issued by the <a href="https://www.epa.gov/mold" target="_blank" rel="noopener">U.S. Environmental Protection Agency (EPA)</a> emphasize that treating exposed timber framing with EPA-registered antimicrobial fungicides stops mold germination and protects indoor air quality for returning occupants.
+                    </p>
+
+                    <h2>Protecting Health and Home Investment</h2>
+                    <p>
+                        Timely restoration efforts safeguard family health and preserve residential structural integrity. By responding calmly, de-energizing affected electrical zones, extracting standing water aggressively, and partnering with qualified local repair specialists, homeowners can successfully navigate flood emergencies and restore their living spaces to safe, pristine condition.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION 6: Core Features & Key Value Grid
+       ========================================================================== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge-tag">Restoration Pillars</div>
+                <h2 class="section-title">Emergency Extraction Framework</h2>
+            </div>
+            <div class="features-grid">
+                <div class="portal-card">
+                    <div class="feature-icon-box">⚡</div>
+                    <h3 style="font-size: 1.15rem; margin-bottom: 0.75rem; font-family: 'Space Grotesk', sans-serif;">Utility Disconnect</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-muted);">Safely isolating electrical breakers and primary water supply valves to eliminate shock risks and stop active flooding.</p>
+                </div>
+                <div class="portal-card">
+                    <div class="feature-icon-box">💧</div>
+                    <h3 style="font-size: 1.15rem; margin-bottom: 0.75rem; font-family: 'Space Grotesk', sans-serif;">Bulk Water Extraction</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-muted);">Deploying commercial submersible pumps and wet-vacs to extract standing water before subfloors buckle.</p>
+                </div>
+                <div class="portal-card">
+                    <div class="feature-icon-box">🌀</div>
+                    <h3 style="font-size: 1.15rem; margin-bottom: 0.75rem; font-family: 'Space Grotesk', sans-serif;">Industrial Air Moving</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-muted);">Utilizing high-velocity axial fan arrays to drive moisture out of saturated timber studs and concrete slabs.</p>
+                </div>
+                <div class="portal-card">
+                    <div class="feature-icon-box">🌡️</div>
+                    <h3 style="font-size: 1.15rem; margin-bottom: 0.75rem; font-family: 'Space Grotesk', sans-serif;">LGR Dehumidification</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-muted);">Operating low-grain refrigerant dehumidifiers to lower relative humidity below 40% and prevent mold growth.</p>
+                </div>
+                <div class="portal-card">
+                    <div class="feature-icon-box">🛡️</div>
+                    <h3 style="font-size: 1.15rem; margin-bottom: 0.75rem; font-family: 'Space Grotesk', sans-serif;">Antimicrobial Shielding</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-muted);">Applying botanical and botanical EPA-registered fungicides to exposed studs to sterilize organic surfaces.</p>
+                </div>
+                <div class="portal-card">
+                    <div class="feature-icon-box">📷</div>
+                    <h3 style="font-size: 1.15rem; margin-bottom: 0.75rem; font-family: 'Space Grotesk', sans-serif;">Thermal Moisture Audits</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-muted);">Scanning wall interiors with infrared thermal cameras to detect hidden moisture pockets behind dry plaster.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION 7: Visual Breakdown / Step-by-Step Architecture Guide
+       ========================================================================== -->
+    <section class="section-padding" id="guide" style="background: var(--bg-surface);">
+        <div class="container">
+            <div class="asym-split-2">
+                <div>
+                    <div class="badge-tag">Action Blueprint</div>
+                    <h2 class="section-title" style="margin-bottom: 1.25rem;">4-Step Emergency Cleanup Sequence</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 2rem;">Memorize this sequential response workflow to minimize structural damage and secure family safety during a flood crisis.</p>
+                    <a href="#contact" class="btn btn-coral">Download Printable Guide</a>
+                </div>
+                <div class="step-list">
+                    <div class="step-card">
+                        <div class="step-index">1</div>
+                        <div>
+                            <h4 style="font-size: 1.1rem; color: var(--bg-dark); font-family: 'Space Grotesk', sans-serif;">Cut Power & Water Access</h4>
+                            <p style="font-size: 0.92rem; color: var(--text-muted);">Switch off main electrical breakers and close incoming main water valves before stepping into standing water.</p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-index">2</div>
+                        <div>
+                            <h4 style="font-size: 1.1rem; color: var(--bg-dark); font-family: 'Space Grotesk', sans-serif;">Extract Bulk Standing Water</h4>
+                            <p style="font-size: 0.92rem; color: var(--text-muted);">Utilize commercial pumps and wet vacuums to drain free-standing water within the first 6 hours.</p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-index">3</div>
+                        <div>
+                            <h4 style="font-size: 1.1rem; color: var(--bg-dark); font-family: 'Space Grotesk', sans-serif;">Remove Saturated Materials</h4>
+                            <p style="font-size: 0.92rem; color: var(--text-muted);">Strip waterlogged carpets, padding, and damaged drywall 12 inches above water lines to promote air flow.</p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-index">4</div>
+                        <div>
+                            <h4 style="font-size: 1.1rem; color: var(--bg-dark); font-family: 'Space Grotesk', sans-serif;">Deploy Industrial Drying Rig</h4>
+                            <p style="font-size: 0.92rem; color: var(--text-muted);">Set up high-velocity air movers and LGR dehumidifiers to continuously dry structural framing down to 12% moisture.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION 8: Comprehensive Comparison Table / Value Matrix
+       ========================================================================== -->
+    <section class="section-padding" id="matrix">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge-tag">Drying Matrix</div>
+                <h2 class="section-title">Structural Moisture Extraction Matrix</h2>
+            </div>
+            <div class="table-responsive">
+                <table class="matrix-table">
+                    <thead>
+                        <tr>
+                            <th>Affected Material</th>
+                            <th>Water Saturation Risk</th>
+                            <th>Primary Failure Mode</th>
+                            <th>Recommended Remediation Action</th>
+                            <th>Salvageability Window</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Drywall / Sheetrock</strong></td>
+                            <td><span style="color:var(--accent-coral); font-weight:700;">Critical</span></td>
+                            <td>Capillary absorption, sagging, and structural failure</td>
+                            <td>Flood-cut removal 12 inches above water line</td>
+                            <td>Replace if wet > 24 hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Carpet Padding</strong></td>
+                            <td><span style="color:var(--accent-coral); font-weight:700;">Critical</span></td>
+                            <td>Bacterial retention & permanent cushion degradation</td>
+                            <td>Immediate extraction and disposal</td>
+                            <td>Dispose & replace padding</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hardwood Flooring</strong></td>
+                            <td>High Priority</td>
+                            <td>Cupping, crowning, and adhesive delamination</td>
+                            <td>Injected mat drying system & dehumidification</td>
+                            <td>Salvageable if dried within 24–48 hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Concrete Foundation Slabs</strong></td>
+                            <td>Moderate</td>
+                            <td>Moisture vapor emission through top sealers</td>
+                            <td>Continuous LGR dehumidification & moisture testing</td>
+                            <td>100% Salvageable (Requires Drying)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION 9: Interactive FAQ Section (Accordion)
+       ========================================================================== -->
+    <section class="section-padding" id="faq" style="background: var(--bg-surface);">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge-tag">Frequently Asked Questions</div>
+                <h2 class="section-title">Expert Cleanup Answers</h2>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-item active">
+                    <button class="faq-question">
+                        How fast does mold begin to grow after an indoor flood?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Under typical indoor conditions, toxic mold spores can begin germinating on wet drywall, carpet backing, and wood studs within 24 to 48 hours. Rapid extraction and drying within the first 24 hours is essential to prevent mold outbreaks.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is it safe to walk into a flooded basement with standing water?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Never step into standing floodwater until electricity is completely turned off at the main circuit breaker. Standing water can conceal live electrical currents or contain biohazardous sewage contaminants.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can flooded carpet padding be dried and saved?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        In almost all cases, saturated carpet padding acts like a sponge, trapping bacteria and moisture against subfloors. It is far more cost-effective and sanitary to dispose of carpet padding and replace it after drying the subfloor.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How long does it take to completely dry out a flooded room?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Using commercial-grade LGR dehumidifiers and high-velocity air movers, complete structural drying typically takes between 3 to 5 days, depending on timber density and initial saturation levels.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION 10: Expert Tips & Best Practices Cards
+       ========================================================================== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge-tag">Cleanup Best Practices</div>
+                <h2 class="section-title">Golden Rules for Emergency Response</h2>
+            </div>
+            <div class="tips-grid">
+                <div class="portal-card tip-card">
+                    <h3 style="font-size: 1.1rem; font-family: 'Space Grotesk', sans-serif; margin-bottom: 0.6rem; color: var(--accent-coral);">Rule #1: Wear Protective Gear</h3>
+                    <p style="font-size: 0.94rem; color: var(--text-muted);">Always wear thick rubber boots, heavy gloves, and N95 respirators when handling floodwater or wet materials.</p>
+                </div>
+                <div class="portal-card tip-card">
+                    <h3 style="font-size: 1.1rem; font-family: 'Space Grotesk', sans-serif; margin-bottom: 0.6rem; color: var(--accent-coral);">Rule #2: Document Damage First</h3>
+                    <p style="font-size: 0.94rem; color: var(--text-muted);">Take clear high-resolution photos and videos of all standing water and damaged items before removing them for insurance claims.</p>
+                </div>
+                <div class="portal-card tip-card">
+                    <h3 style="font-size: 1.1rem; font-family: 'Space Grotesk', sans-serif; margin-bottom: 0.6rem; color: var(--accent-coral);">Rule #3: Test Timber Moisture</h3>
+                    <p style="font-size: 0.94rem; color: var(--text-muted);">Never rebuild drywall over wood framing until a moisture meter confirms timber moisture content is below 16%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION 11: User Feedback & Testimonials Showcase
+       ========================================================================== -->
+    <section class="section-padding" style="background: var(--bg-surface);">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge-tag">Community Feedback</div>
+                <h2 class="section-title">Perspectives From Prepared Property Owners</h2>
+            </div>
+            <div class="testimonial-grid">
+                <div class="portal-card">
+                    <p style="font-style: italic; color: var(--text-muted); font-size: 1.05rem;">
+                        "When a main supply pipe burst inside our home during a winter storm, the step-by-step extraction guide on Practical Living Today saved our finished living room from total destruction. Essential emergency reading!"
+                    </p>
+                    <div class="author-box">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Sarah Jenkins" class="author-avatar">
+                        <div>
+                            <h4 style="font-size: 0.95rem; color: var(--bg-dark); font-family: 'Space Grotesk', sans-serif;">Sarah Jenkins</h4>
+                            <p style="font-size: 0.8rem; color: var(--text-muted);">Homeowner, Subterranean Property</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portal-card">
+                    <p style="font-style: italic; color: var(--text-muted); font-size: 1.05rem;">
+                        "Understanding how LGR dehumidifiers and high-velocity air movers work together helped us dry our basement framing completely without any mold growth. Outstanding digital publication!"
+                    </p>
+                    <div class="author-box">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Marcus Vance" class="author-avatar">
+                        <div>
+                            <h4 style="font-size: 0.95rem; color: var(--bg-dark); font-family: 'Space Grotesk', sans-serif;">Marcus Vance</h4>
+                            <p style="font-size: 0.8rem; color: var(--text-muted);">Estate Manager & Home Steward</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION 12: Highlighted Resource Banner / Quick Action Callout
+       ========================================================================== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="resource-banner">
+                <div class="asym-split-2">
+                    <div>
+                        <span class="badge-tag" style="background: rgba(0, 180, 216, 0.25); color: var(--accent-cyan);">Free Printable Guide</span>
+                        <h2 style="font-size: 2.2rem; font-family: 'Space Grotesk', sans-serif; margin: 0.8rem 0; color: #FFFFFF;">Flood Cleanup Emergency Checklist</h2>
+                        <p style="color: rgba(248, 250, 252, 0.82); font-size: 1.05rem;">Download our single-page printable emergency workflow PDF detailing utility isolation, extraction setup, and structural drying logs.</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <a href="#contact" class="btn btn-coral" style="padding: 1.1rem 2.4rem;">Download PDF Checklist</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION 13: Functional Contact Form Section
+       ========================================================================== -->
+    <section class="section-padding" id="contact">
+        <div class="container">
+            <div class="asym-split-2">
+                <div>
+                    <div class="badge-tag">Editorial Desk</div>
+                    <h2 class="section-title" style="margin-bottom: 1.25rem;">Consult With Our Restoration Specialists</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 2rem;">Have questions regarding structural extraction, mold prevention, or wish to submit a case study? Reach out to our technical team.</p>
+                    <div style="display: flex; flex-direction: column; gap: 1rem; color: var(--text-muted); font-size: 0.95rem;">
+                        <p>📍 <strong>Editorial Focus:</strong> Home Safety & Emergency Preparedness</p>
+                        <p>📧 <strong>Technical Desk:</strong> desk@practicallivingtoday.com</p>
+                        <p>⏱️ <strong>Response Window:</strong> 24–48 Business Hours</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <form id="contactForm" onsubmit="event.preventDefault(); alert('Thank you for contacting Practical Living Today. Your safety inquiry has been logged.');">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" class="form-control" placeholder="Marcus" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" class="form-control" placeholder="Vance" required>
+                            </div>
+                            <div class="form-group full">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" class="form-control" placeholder="marcus@example.com" required>
+                            </div>
+                            <div class="form-group full">
+                                <label for="propertyType">Property Structure</label>
+                                <select id="propertyType" class="form-control">
+                                    <option>Single-Family Home with Basement</option>
+                                    <option>Townhouse / Attached Residence</option>
+                                    <option>Historic Property on Crawlspace</option>
+                                    <option>Commercial Property</option>
+                                </select>
+                            </div>
+                            <div class="form-group full">
+                                <label for="message">Inquiry / Case Notes</label>
+                                <textarea id="message" rows="4" class="form-control" placeholder="Describe your flood event details or structural drying question..." required></textarea>
+                            </div>
+                            <div class="form-group full">
+                                <button type="submit" class="btn btn-dark" style="width: 100%;">Submit Consultation Request</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION 14: Comprehensive Footer
+       ========================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="#" class="brand-logo" style="margin-bottom: 1.2rem;">
+                        <div class="logo-emblem">P</div>
+                        <div class="brand-title" style="color: #FFFFFF;">Practical Living <span>Today</span></div>
+                    </a>
+                    <p style="font-size: 0.9rem; line-height: 1.6; max-width: 320px;">
+                        An independent digital Web 2.0 publication devoted to residential disaster preparedness, flood extraction protocols, and home structural preservation.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#mission">Overview</a></li>
+                        <li><a href="#featured-article">Flood Safety</a></li>
+                        <li><a href="#guide">Action Blueprint</a></li>
+                        <li><a href="#matrix">Drying Matrix</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Technical Topics</h4>
+                    <ul class="footer-links">
+                        <li><a href="#featured-article">Water Extraction</a></li>
+                        <li><a href="#featured-article">LGR Dehumidification</a></li>
+                        <li><a href="#featured-article">Mold Prevention</a></li>
+                        <li><a href="#featured-article">Utility Safety</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Publication Details</h4>
+                    <p style="font-size: 0.86rem; line-height: 1.6; margin-bottom: 1rem;">
+                        Delivering practical home safety and emergency restoration intelligence across residential regions.
+                    </p>
+                    <div style="font-size: 0.82rem; color: var(--accent-cyan);">
+                        ● Subdomain: practicallivingtoday
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    © 2026 Practical Living Today. All rights reserved. Residential Safety Portal.
+                </div>
+                <div style="display: flex; gap: 1.6rem;">
+                    <a href="#" style="color: rgba(248, 250, 252, 0.6);">Privacy Policy</a>
+                    <a href="#" style="color: rgba(248, 250, 252, 0.6);">Terms of Service</a>
+                    <a href="#" style="color: rgba(248, 250, 252, 0.6);">Editorial Ethics</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Minimal Vanilla JS for Accordion & Navigation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // FAQ Accordion Interactivity
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const btn = item.querySelector('.faq-question');
+                btn.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    
+                    faqItems.forEach(i => i.classList.remove('active'));
+                    
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+
+            // Mobile Menu Toggle
+            const mobileToggle = document.querySelector('.mobile-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (mobileToggle) {
+                mobileToggle.addEventListener('click', () => {
+                    if (navLinks.style.display === 'flex') {
+                        navLinks.style.display = 'none';
+                    } else {
+                        navLinks.style.display = 'flex';
+                        navLinks.style.flexDirection = 'column';
+                        navLinks.style.position = 'absolute';
+                        navLinks.style.top = '100%';
+                        navLinks.style.left = '0';
+                        navLinks.style.width = '100%';
+                        navLinks.style.background = '#F8FAFC';
+                        navLinks.style.padding = '1.5rem';
+                        navLinks.style.borderBottom = '2.5px solid var(--bg-dark)';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
